@@ -6,11 +6,11 @@ from selenium.webdriver.common.by import By
 
 
 class TestCeshiren:
-    def setup_class(self):
+    def setup(self):
         # 初始化浏览器
         self.webdriver = webdriver.Chrome(service=Service(r'D:\tools\webdriver\chromedriver.exe'))
 
-    def teardown_class(self):
+    def teardown(self):
         # 关闭浏览器
         self.webdriver.quit()
 
