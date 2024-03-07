@@ -14,6 +14,8 @@ class TestCeshiren:
     def teardown_class(self):
         # 关闭浏览器
         self.webdriver.quit()
+
+
     def test_search_selenium(self):
         """
         测试 https://ceshiren.com/ 的搜索功能
