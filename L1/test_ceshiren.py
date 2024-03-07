@@ -6,14 +6,14 @@ from selenium.webdriver.common.by import By
 
 
 class TestCeshiren:
-    def setup(self):
+
+    def setup_class(self):
         # 初始化浏览器
         self.webdriver = webdriver.Chrome(service=Service(r'D:\tools\webdriver\chromedriver.exe'))
 
-    def teardown(self):
+    def teardown_class(self):
         # 关闭浏览器
         self.webdriver.quit()
-
     def test_search_selenium(self):
         """
         测试 https://ceshiren.com/ 的搜索功能
